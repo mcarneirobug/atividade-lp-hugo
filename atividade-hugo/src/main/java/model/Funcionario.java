@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Funcionario {
-    private PessoaJuridica pessoaJuridica;
+    private PessoaFisica pessoaFisica;
     private String cargo;
     private Double salario;
 }

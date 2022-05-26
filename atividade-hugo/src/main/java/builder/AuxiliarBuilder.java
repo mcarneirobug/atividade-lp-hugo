@@ -109,12 +109,12 @@ public class AuxiliarBuilder {
     }
 
     public static List<Funcionario> criarFuncionarios() {
-        final var pessoasJuridicas = criarPessoasJuridicas();
+        final var pessoasFisicas = criarPessoasFisicas();
         final List<Funcionario> funcionarios = new ArrayList<>();
 
-        pessoasJuridicas.forEach(pj -> {
+        pessoasFisicas.forEach(pf -> {
             final var funcionario = Funcionario.builder()
-                    .pessoaJuridica(pj)
+                    .pessoaFisica(pf)
                     .cargo(CARGO)
                     .salario(SALARIO_FUNCIONARIO)
                     .build();
